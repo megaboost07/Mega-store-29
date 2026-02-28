@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdDekho - Ads Dekh Kar Paise Kamaye</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #764ba2;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #764ba2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        .ad-section {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .ad-section h2 {
+            color: #764ba2;
+            margin-bottom: 20px;
+            font-size: 24px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .ad-container {
+            background: #f8f9fa;
+            border: 2px dashed #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ad-label {
+            background: #ff6b6b;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .stat-card h3 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .stat-card p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .footer {
+            background: rgba(0,0,0,0.8);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+
+    <!-- Google AdSense Code -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2753772773698567"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <a href="#" class="logo">📺 AdDekho</a>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#ads">Ads</a>
+                <a href="#earnings">Earnings</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero" id="home">
+            <h1>Ads Dekh Kar Paise Kamaye</h1>
+            <p>Har ad dekhne par paise kamaye. Simple, fast aur reliable!</p>
+            <a href="#ads" class="btn">Abhi Shuru Karein</a>
+        </div>
+
+        <!-- Top Ad Section -->
+        <div class="ad-section" id="ads">
+            <span class="ad-label">SPONSORED</span>
+            <h2>📢 Featured Advertisement</h2>
+            <div class="ad-container">
+                <!-- AdSense Ad Unit 1 -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-2753772773698567"
+                     data-ad-slot="1234567890"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>₹500</h3>
+                <p>Minimum Payout</p>
+            </div>
+            <div class="stat-card">
+                <h3>50K+</h3>
+                <p>Active Users</p>
+            </div>
+            <div class="stat-card">
+                <h3>₹10</h3>
+                <p>Per Ad View</p>
+            </div>
+            <div class="stat-card">
+                <h3>24h</h3>
+                <p>Instant Withdrawal</p>
+            </div>
+        </div>
+
+        <!-- Middle Ad Section -->
+        <div class="ad-section" style="margin-top: 30px;">
+            <span class="ad-label">ADVERTISEMENT</span>
+            <h2>🎯 Recommended For You</h2>
+            <div class="ad-container">
+                <!-- AdSense Ad Unit 2 -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-2753772773698567"
+                     data-ad-slot="0987654321"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+
+        <!-- Content Ad Section -->
+        <div class="ad-section">
+            <span class="ad-label">PROMOTED</span>
+            <h2>🔥 Trending Now</h2>
+            <div class="ad-container">
+                <!-- AdSense Ad Unit 3 -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-2753772773698567"
+                     data-ad-slot="1122334455"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+
+        <!-- Bottom Banner Ad -->
+        <div class="ad-section">
+            <span class="ad-label">SPONSORED LINK</span>
+            <h2>💼 Premium Offers</h2>
+            <div class="ad-container">
+                <!-- AdSense Ad Unit 4 - Banner -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:728px;height:90px"
+                     data-ad-client="ca-pub-2753772773698567"
+                     data-ad-slot="5566778899"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h3>AdDekho - India Ka #1 Ad Viewing Platform</h3>
+        <p>© 2024 AdDekho. All rights reserved. | <a href="#" style="color: #667eea;">Privacy Policy</a> | <a href="#" style="color: #667eea;">Terms of Service</a></p>
+        <p style="margin-top: 20px; font-size: 14px; opacity: 0.8;">Note: Ad earnings depend on advertiser bids and user engagement.</p>
+    </footer>
+
+</body>
+</html>
